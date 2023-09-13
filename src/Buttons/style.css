@@ -1,0 +1,27 @@
+.renderButtons {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    color: teal;
+    border-style: none;
+    background-color: whitesmoke;
+    transition: 1s;
+}
+.renderButtons:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.renderButtons:disabled {
+    color: hsl(0, 0%, 40%);
+}
+
+@media (max-width:767px) {
+    .list__renderButtons {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+    .renderButtons {
+        margin: 10px;
+    }
+}

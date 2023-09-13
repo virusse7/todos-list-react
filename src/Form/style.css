@@ -1,0 +1,65 @@
+.formContainer {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.formContainer__header {
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.form__newTaskInput {
+    padding: 5px;
+}
+
+.form__addTaskButton {
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    border-style: hidden;
+    transition: 1s;
+}
+.form__addTaskButton:hover {
+    background-color: hsl(180, 100%, 32%);
+    transform: scale(1.05);
+}
+.form__addTaskButton:active {
+    background-color: hsl(180, 100%, 35%);
+}
+
+@media (max-width: 767px) {
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+    .form__newTaskInput {
+        margin: 5px;
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form__addTaskButton {
+        margin: 5px;
+        padding: 7px;
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
