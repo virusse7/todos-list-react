@@ -1,8 +1,8 @@
 import "./style.css";
 const Section = ({ title, body, extraHeaderContent }) => (
-    <section className="listContainer">
-        <header className="list__headerElement">
-            <h2 className="list__header">{title}</h2>
+    <section className="sectionContainer">
+        <header className="section__headerElement">
+            <h2 className="section__header">{title}</h2>
             {extraHeaderContent}
         </header>
         <div>

@@ -1,0 +1,17 @@
+.sectionContainer {
+    background-color: whitesmoke;
+    margin: 30px;
+    box-shadow: 0px 0px 0px 2px gray;
+}
+
+.section__header {
+    padding: 10px 0px 0px 20px;
+    margin: 0px;
+}
+
+.section__headerElement {
+    border-bottom: 1px solid gainsboro;
+    margin: 5px 0 2px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
