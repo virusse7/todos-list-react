@@ -16,7 +16,7 @@ function App() {
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
-  }
+  };
 
   return (
     <Container>
@@ -36,6 +36,6 @@ function App() {
 
     </Container>
   );
-}
+};
 
 export default App;

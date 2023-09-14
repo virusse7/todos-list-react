@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.css";
 const Tasks = ({ hideDone, tasks }) => (
   <ul className="list__tasks tasks">
     {tasks.map(task => (
