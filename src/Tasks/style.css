@@ -12,25 +12,6 @@
     text-decoration: line-through;
 }
 
-.listContainer {
-    background-color: whitesmoke;
-    margin: 30px;
-    box-shadow: 0px 0px 0px 2px gray;
-}
-
-.list__headerElement {
-    border-bottom: 1px solid gainsboro;
-    margin: 5px 0 2px 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
-
-
-.list__header {
-    padding: 10px 0px 0px 20px;
-    margin: 0px;
-}
-
 .list__tasks {
     margin: 5px;
     padding: 10px;
@@ -50,16 +31,16 @@
     grid-template-columns: 49% 49%;
 }
 
-.list__button--hidden {
-    display: none;
-}
-
 .list__button {
     height: 30px;
     width: 30px;
     margin: 5px;
     padding: 5px;
     transition: 1s;
+}
+
+.list__button--hidden {
+    display: none;
 }
 
 .list__button--done {
@@ -79,17 +60,14 @@
     background-color: hsl(0, 100%, 55%);
 }
 
-
-
 @media (max-width:767px) {
-
     .list__headerElement {
         display: flex;
         flex-direction: column;
     }
+
     .list__header {
         text-align: center;
         padding: 10px 0px;
     }
-
 }
