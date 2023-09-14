@@ -1,20 +1,20 @@
 import "./style.css";
 
-const Buttons = ({ tasks, hideDone }) => (
-  <div className="list__renderButtons">
+const Buttons = ({ tasks, hideDoneTasks }) => (
+  <div className="buttons">
     {tasks.length > 0 && (
       <>
-        <button className="renderButtons">
-          {hideDone ? "Pokaż" : "Ukryj"} ukończone
+        <button className="buttons_button">
+          {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button
-          className="renderButtons"
+          className="buttons_button"
           disabled={tasks.every(({ done }) => done)}
         >
           Ukończ wszystkie
         </button>
       </>
-    )}
+    )};
   </div>
 );
 export default Buttons;

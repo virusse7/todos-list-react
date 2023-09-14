@@ -1,4 +1,4 @@
-.renderButtons {
+.buttons_button {
     font-size: 16px;
     padding: 5px;
     margin: 5px;
@@ -7,21 +7,27 @@
     background-color: whitesmoke;
     transition: 1s;
 }
-.renderButtons:hover {
+.buttons_button:hover {
     color: hsl(180, 100%, 35%);
 }
 
-.renderButtons:disabled {
+.buttons_button:disabled {
     color: hsl(0, 0%, 40%);
 }
 
+.buttons {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 @media (max-width:767px) {
-    .list__renderButtons {
+    .buttons {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
     }
-    .renderButtons {
+    .buttons_button {
         margin: 10px;
     }
 }
