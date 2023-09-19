@@ -12,6 +12,7 @@ const Form = ({ addNewTask }) => {
     return (
         <form className="form" onSubmit={onFormSubmit}>
             <input
+                required
                 value={newTaskContent}
                 onChange={({ target }) => setNewTaskContent(target.value)}
                 className="form__newTaskInput newTask"
