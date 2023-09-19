@@ -15,3 +15,15 @@
     display: grid;
     grid-template-columns: 1fr auto;
 }
+
+@media (max-width: 767px) {
+    .section__header {
+        padding-top: 10px;
+        padding-left: 0px;
+        margin: 0px auto;
+    }
+    .section__headerElement {
+        display: flex;
+        flex-direction: column;
+    }
+}
