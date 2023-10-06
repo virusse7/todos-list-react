@@ -3,6 +3,7 @@ import { FormSection, Button, Input } from "./styled";
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
+    const inputRef = useRef(null);
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -11,13 +12,8 @@ const Form = ({ addNewTask }) => {
         };
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
-
-    };
-    const inputRef = useRef(null);
-
-    const focusInput = () => {
         inputRef.current.focus();
-    }
+    };
 
     return (
         <FormSection onSubmit={onFormSubmit}>
@@ -27,9 +23,7 @@ const Form = ({ addNewTask }) => {
                 onChange={({ target }) => setNewTaskContent(target.value)}
                 placeholder="Co jest do zrobienia?"
             />
-            <Button
-                onClick={focusInput}
-            >
+            <Button>
                 Dodaj zadanie
             </Button>
         </FormSection>
