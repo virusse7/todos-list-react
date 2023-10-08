@@ -2,14 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     html {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     *, *:before, *:after {
-    box-sizing: inherit;
+        box-sizing: inherit;
+        
     }
-
     body {
-    background-color: rgb(231, 231, 231);
+        background-color: rgb(231, 231, 231);
     }
 `;

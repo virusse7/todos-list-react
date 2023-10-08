@@ -12,7 +12,7 @@ grid-template-columns: 1fr auto;
 }
 `;
 
-export const H2 = styled.h2`
+export const Title = styled.h2`
 padding: 20px;
 margin: 0px;
 
