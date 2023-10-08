@@ -21,7 +21,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Div = styled.div`
+export const StyledButtons = styled.div`
   margin: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;

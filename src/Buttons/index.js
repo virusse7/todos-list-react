@@ -1,7 +1,7 @@
-import { Div, Button } from "./styled";
+import { Button, StyledButtons } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-  <Div>
+  <StyledButtons>
     {tasks.length > 0 && (
       <>
         <Button onClick={toggleHideDone}>
@@ -15,7 +15,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
         </Button>
       </>
     )}
-  </Div>
+  </StyledButtons>
 );
 
 export default Buttons;
