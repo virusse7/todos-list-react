@@ -4,22 +4,18 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import { useState } from "react";
-import { UseTasks } from "./useTasks";
+import { useTasks } from "./useTasks";
 
 function App() {
-  const [hideDone, setHideDone] = useState(false);
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
-
   const {
     tasks,
     removeTask,
     toggleTaskDone,
     setAllDone,
     addNewTask,
-  } = UseTasks();
+    toggleHideDone,
+    hideDone,
+  } = useTasks();
 
   return (
     <Container>
