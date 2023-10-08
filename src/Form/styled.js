@@ -7,7 +7,9 @@ export const FormSection = styled.form`
     padding: 20px;
     gap: 10px;
 
-    @media (max-width: 767px) {
+    @media (
+    max-width: ${({ theme }) => theme.breakpoint.mobileMax}px
+    ) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -16,20 +18,22 @@ export const FormSection = styled.form`
 `;
 
 export const Button = styled.button`
-    background-color: hsl(180, 100%, 25%);
-    color: white;
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     border-style: hidden;
     transition: 1s;
 
     &:hover {
-        background-color: hsl(180, 100%, 32%);
+        background-color: ${({ theme }) => theme.color.brighterteal};
         transform: scale(1.05);
     }
     &:active {
-        background-color: hsl(180, 100%, 35%);
+        background-color: ${({ theme }) => theme.color.bondiblue};
     }
 
-    @media (max-width: 767px) {
+    @media (
+    max-width: ${({ theme }) => theme.breakpoint.mobileMax}px
+    ) {
         margin: 5px;
         padding: 7px;
         display: flex;
@@ -42,7 +46,9 @@ export const Button = styled.button`
 export const Input = styled.input`
     padding: 5px;
 
-    @media (max-width: 767px) {
+    @media (
+    max-width: ${({ theme }) => theme.breakpoint.mobileMax}px
+    ) {
         margin: 5px;
         display: flex;
         flex-basis: 100%;

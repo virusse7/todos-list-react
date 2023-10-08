@@ -4,20 +4,22 @@ export const Button = styled.button`
   font-size: 16px;
   padding: 5px;
   margin: 5px;
-  color: teal;
+  color: ${({ theme }) => theme.color.teal};
   border-style: none;
-  background-color: whitesmoke;
+  background-color: ${({ theme }) => theme.color.whitesmoke};
   transition: 1s;
 
   &:hover {
-    color: hsl(180, 100%, 35%);
+    color: ${({ theme }) => theme.color.bondiblue};
   }
   &:disabled {
-    color: hsl(0, 0%, 40%);
+    color: ${({ theme }) => theme.color.gray};
   }
 
-  @media(max-width: 767px) {
-    margin: 5px;
+  @media(
+    max-width: ${({ theme }) => theme.breakpoint.mobileMax}px
+    ) {
+      margin: 5px;
   }
 `;
 
@@ -26,9 +28,11 @@ export const StyledButtons = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @media(max-width: 767px) {
-    display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 1fr 1fr;
+  @media(
+    max-width: ${({ theme }) => theme.breakpoint.mobileMax}px
+    ) {
+      display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
   }
 `;

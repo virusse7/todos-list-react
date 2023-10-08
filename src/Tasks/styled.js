@@ -16,18 +16,18 @@ export const Button = styled.button`
     transition: 1s;
 
     ${({ done }) => done && css`
-        background-color: hsl(120, 100%, 35%);
+        background-color: ${({ theme }) => theme.color.green};
         border-style: none;
         &:hover {
-            background-color: hsl(120, 100%, 40%);
+            background-color: ${({ theme }) => theme.color.brightergreen};
         }
     `}
 
     ${({ remove }) => remove && css`
-        background-color: hsl(0, 100%, 45%);
+        background-color: ${({ theme }) => theme.color.red};
         border-style: none;
         &:hover {
-            background-color: hsl(0, 100%, 55%);
+            background-color: ${({ theme }) => theme.color.torchred};
         }
     `}
 `;
@@ -39,7 +39,7 @@ export const Item = styled.li`
     align-items: center;
     margin: 0px;
     padding: 5px;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid ${({ theme }) => theme.color.gainsboro};
 
     ${({ hidden }) => hidden && css`
         display: none;
