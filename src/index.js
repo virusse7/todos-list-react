@@ -4,40 +4,8 @@ import { GlobalStyle } from './GlobalStyle';
 import reportWebVitals from './reportWebVitals';
 import { theme } from './theme';
 import { ThemeProvider } from 'styled-components';
-import { configureStore } from '@reduxjs/toolkit';
 import App from './App';
 
-const initialState = {
-  tasks: [],
-};
-
-const tasksReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "addTask":
-      return {
-        ...state,
-        tasks: [...state.tasks,
-        {
-          content: action.payload,
-        },
-        ],
-      };
-    default:
-      return state;
-  }
-};
-
-const addTask = contnet => ({
-  type: "addTask",
-  payload: contnet,
-});
-const selectTasks = ({ task }) => task;
-
-const store = configureStore({ reducer: tasksReducer });
-console.log(store.getState());
-
-store.dispatch(addTask("Buy milk"));
-console.log(store.getState());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
