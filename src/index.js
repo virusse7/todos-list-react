@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import { GlobalStyle } from './GlobalStyle';
 import reportWebVitals from './reportWebVitals';
 import { theme } from './theme';
 import { ThemeProvider } from 'styled-components';
 import { configureStore } from '@reduxjs/toolkit';
+import App from './App';
 
 const initialState = {
   tasks: [],
