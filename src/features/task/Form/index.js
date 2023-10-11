@@ -13,7 +13,7 @@ const Form = () => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        if (!trimmedNewTaskContent === "") {
+        if (trimmedNewTaskContent === "") {
             return;
         };
 
