@@ -32,3 +32,4 @@ background-color: ${({ theme }) => theme.color.whitesmoke};
 margin: 30px;
 box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.color.silver};
 `;
+
