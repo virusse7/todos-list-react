@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const Button = styled.button`
   font-size: 16px;
   padding: 5px;
@@ -21,6 +23,11 @@ export const Button = styled.button`
     ) {
       margin: 5px;
   }
+`;
+
+export const ExampleTasksButton = styled(Button)`
+  padding-right: 10px;
+  font-size: 18px;
 `;
 
 export const StyledButtons = styled.div`
