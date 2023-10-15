@@ -4,7 +4,7 @@ import {
   selectHideDone,
   selectIsEveryTaskDone,
   setAllDone,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { Button, StyledButtons } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 

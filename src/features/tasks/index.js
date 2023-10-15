@@ -1,12 +1,13 @@
-import Form from "./Form";
-import TaskList from "./TaskList";
-import Buttons from "./Buttons";
+import Form from "./TasksPage/Form";
+import TaskList from "./TasksPage/TaskList/index";
+import Buttons from "./TasksPage/Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import { ExampleTasksButton } from "./Buttons/styled";
+import { ExampleTasksButton } from "../tasks/TasksPage/Buttons/styled";
 import { fetchExampleTasks } from "./tasksSlice";
 import { useDispatch } from "react-redux";
 import { Container } from "../../common/Container/styled";
+import { SearchContainer } from "../searchTask";
 
 
 function Tasks() {
@@ -24,6 +25,10 @@ function Tasks() {
           Pobierz przykładowe zadania
         </ExampleTasksButton>}
         body={<Form />}
+      />
+      <Section
+        title={"Wyszukaj zadanie"}
+        body={<SearchContainer />}
       />
       <Section
         title="Lista zadań"
