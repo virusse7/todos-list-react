@@ -10,7 +10,7 @@ import { Container } from "../../common/Container/styled";
 import { SearchContainer } from "../searchTask";
 
 
-function Tasks() {
+function TasksPage() {
   const dispatch = useDispatch();
   return (
     <Container>
@@ -27,7 +27,7 @@ function Tasks() {
         body={<Form />}
       />
       <Section
-        title={"Wyszukaj zadanie"}
+        title={"Wprowadź zadanie do wyszukania"}
         body={<SearchContainer />}
       />
       <Section
@@ -39,4 +39,4 @@ function Tasks() {
   );
 };
 
-export default Tasks;
+export default TasksPage;
