@@ -1,9 +1,10 @@
-import { StyledInput } from "./styled";
+import { StyledInput, Div } from "./styled";
 
 
 export const SearchContainer = () => {
     return (
-        <StyledInput placeholder="Wpisz zadanie do wyszukania">
-        </StyledInput>
+        <Div>
+            <StyledInput placeholder="Wpisz zadanie do wyszukania" />
+        </Div>
     )
 }
