@@ -51,3 +51,4 @@ export const Content = styled.span`
         text-decoration: line-through;
     `}
 `;
+
