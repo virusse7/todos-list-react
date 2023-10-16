@@ -6,12 +6,12 @@ export default () => {
         <StyledNav>
             <StyledUl>
                 <StyledLi>
-                    <StyledLink to={"/zadania"}>
+                    <StyledLink to={toTasks()}>
                         Zadania
                     </StyledLink>
                 </StyledLi>
                 <StyledLi>
-                    <StyledLink to={"/autor"}>
+                    <StyledLink to={toAuthor()}>
                         O autorze
                     </StyledLink>
                 </StyledLi>
