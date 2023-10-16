@@ -33,3 +33,7 @@ margin: 30px;
 box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.color.silver};
 `;
 
+export const Paragraph = styled.p`
+margin: 0;
+padding: 0;
+`;
