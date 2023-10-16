@@ -31,6 +31,12 @@ export const SectionContainer = styled.section`
 background-color: ${({ theme }) => theme.color.whitesmoke};
 margin: 30px;
 box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.color.silver};
+
+ @media (
+    max-width: ${({ theme }) => theme.breakpoint.mobileMax}px
+    ) {
+        text-align: center;
+    }
 `;
 
 export const Paragraph = styled.p`
