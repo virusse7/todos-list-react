@@ -12,6 +12,7 @@ export const theme = {
         brightergreen: "#00cc00",
         red: "#e60000",
         torchred: "#ff1a1a",
+        black: "#000000",
     },
     breakpoint: {
         mobileMax: 767,
