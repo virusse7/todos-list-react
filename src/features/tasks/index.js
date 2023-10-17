@@ -3,15 +3,12 @@ import TaskList from "./TasksPage/TaskList/index";
 import Buttons from "./TasksPage/Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import { ExampleTasksButton } from "../tasks/TasksPage/Buttons/styled";
-import { fetchExampleTasks } from "./tasksSlice";
-import { useDispatch } from "react-redux";
+import FetchExampleTasksButton from "./TasksPage/FetchExampleTasksButton";
 import { Container } from "../../common/Container/styled";
 import { SearchContainer } from "../searchTask";
 
 
 function TasksPage() {
-  const dispatch = useDispatch();
   return (
     <Container>
       <Header
@@ -19,11 +16,9 @@ function TasksPage() {
       />
       <Section
         title="Dodaj nowe zadanie"
-        extraHeaderContent={<ExampleTasksButton
-          onClick={() => dispatch(fetchExampleTasks())}
-        >
+        extraHeaderContent={<FetchExampleTasksButton>
           Pobierz przykładowe zadania
-        </ExampleTasksButton>}
+        </FetchExampleTasksButton>}
         body={<Form />}
       />
       <Section
