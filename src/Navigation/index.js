@@ -1,19 +1,19 @@
 import { toAuthor, toTasks } from "../routes";
-import { StyledLi, StyledLink, StyledNav, StyledUl } from "./styled";
+import { StyledLi, StyledNavLink, StyledNav, StyledUl } from "./styled";
 
 export default () => {
     return (
         <StyledNav>
             <StyledUl>
                 <StyledLi>
-                    <StyledLink to={toTasks()}>
+                    <StyledNavLink to={toTasks()}>
                         Zadania
-                    </StyledLink>
+                    </StyledNavLink>
                 </StyledLi>
                 <StyledLi>
-                    <StyledLink to={toAuthor()}>
+                    <StyledNavLink to={toAuthor()}>
                         O autorze
-                    </StyledLink>
+                    </StyledNavLink>
                 </StyledLi>
             </StyledUl>
         </StyledNav>

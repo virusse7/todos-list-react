@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+
 
 export const StyledNav = styled.nav`
     background-color: ${({ theme }) => theme.color.teal};
@@ -7,13 +8,16 @@ export const StyledNav = styled.nav`
     justify-content: center;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     color: ${({ theme }) => theme.color.white};
     font-size: 20px;
     transition: 1s;
     &:hover {
         color: ${({ theme }) => theme.color.gainsboro};
+    }
+    &.active {
+        font-weight: bold;
     }
 `;
 
