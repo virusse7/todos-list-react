@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     margin: 5px;
@@ -50,5 +51,15 @@ export const Content = styled.span`
     ${({ done }) => done && css`
         text-decoration: line-through;
     `}
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.teal};
+    transition: 1s;
+    &:hover {
+        text-decoration: underline;
+        color: ${({ theme }) => theme.color.brighterteal};
+    }
 `;
 
