@@ -4,13 +4,13 @@ import AuthorPage from "./features/author/AuthorPage";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import Navigation from "./Navigation";
 import TaskPage from "./features/tasks/TaskPage";
-import { toAuthor, toTasks } from "./routes";
+import { toAuthor, toTasks, toTask } from "./routes";
 
 export default () => (
     <HashRouter>
         <Navigation />
         <Switch>
-            <Route path={"/zadania/:id"}>
+            <Route path={toTask()}>
                 <TaskPage />
             </Route>
             <Route path={toTasks()}>
@@ -24,5 +24,4 @@ export default () => (
             </Route>
         </Switch>
     </HashRouter>
-
-)
+);
