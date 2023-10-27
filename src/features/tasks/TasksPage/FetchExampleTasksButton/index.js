@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-
 import { selectLoading, fetchExampleTasks } from "../../tasksSlice";
 import { ExampleTasksButton } from "../Buttons/styled";
 
@@ -13,4 +12,4 @@ export default () => {
             }
         </ExampleTasksButton>
     );
-}
+};

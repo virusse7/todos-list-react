@@ -19,18 +19,20 @@ export const Button = styled.button`
     ${({ done }) => done && css`
         background-color: ${({ theme }) => theme.color.green};
         border-style: none;
+
         &:hover {
             background-color: ${({ theme }) => theme.color.brightergreen};
-        }
-    `}
+        };
+    `};
 
     ${({ remove }) => remove && css`
         background-color: ${({ theme }) => theme.color.red};
         border-style: none;
+
         &:hover {
             background-color: ${({ theme }) => theme.color.torchred};
-        }
-    `}
+        };
+    `};
 `;
 
 export const Item = styled.li`
@@ -44,22 +46,23 @@ export const Item = styled.li`
 
     ${({ hidden }) => hidden && css`
         display: none;
-    `}
+    `};
 `;
 
 export const Content = styled.span`
     ${({ done }) => done && css`
         text-decoration: line-through;
-    `}
+    `};
 `;
 
 export const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${({ theme }) => theme.color.teal};
     transition: 1s;
+
     &:hover {
         text-decoration: underline;
         color: ${({ theme }) => theme.color.brighterteal};
-    }
+    };
 `;
 

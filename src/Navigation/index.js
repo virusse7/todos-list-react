@@ -17,6 +17,6 @@ export default () => {
                 </StyledLi>
             </StyledUl>
         </StyledNav>
-    )
+    );
 };
 

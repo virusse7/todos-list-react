@@ -7,7 +7,6 @@ import FetchExampleTasksButton from "./TasksPage/FetchExampleTasksButton";
 import { Container } from "../../common/Container/styled";
 import { SearchContainer } from "../searchTask";
 
-
 function TasksPage() {
   return (
     <Container>

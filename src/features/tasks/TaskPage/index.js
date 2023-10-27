@@ -22,9 +22,8 @@ function TaskPage() {
             >
             </Section>
         </Container>
-
-    )
-}
+    );
+};
 
 
 export default TaskPage;

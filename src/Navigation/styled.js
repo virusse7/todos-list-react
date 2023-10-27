@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-
 export const StyledNav = styled.nav`
     background-color: ${({ theme }) => theme.color.teal};
     display: flex;
@@ -14,11 +13,11 @@ export const StyledNavLink = styled(NavLink)`
     font-size: 20px;
     transition: 1s;
     &:hover {
-        color: ${({ theme }) => theme.color.gainsboro};
-    }
+        color: ${({ theme }) => theme.color.black};
+    };
     &.active {
         font-weight: bold;
-    }
+    };
 `;
 
 export const StyledUl = styled.ul`
@@ -30,7 +29,7 @@ export const StyledUl = styled.ul`
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
         grid-gap: 15px;
-    }
+    };
 `;
 
 export const StyledLi = styled.li``;
